@@ -11,7 +11,7 @@ export default {
     name: "Todolist",
     components: { Todo },
     computed: {
-      ...mapState([
+      ...mapState('todolist',[
         'todoList'
       ])
     }

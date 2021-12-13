@@ -29,7 +29,7 @@ export default {
     todo: { type: Object },
   },
   methods: {
-    ...mapMutations([
+    ...mapMutations('todolist',[
       'deleteTodoItem'
     ])
   }

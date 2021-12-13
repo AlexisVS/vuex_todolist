@@ -2,7 +2,7 @@
   <div class="mb-10 w-full">
     <input
       type="text"
-      :value="$store.state.inputNewTodo"
+      :value="$store.state.todolist.inputNewTodo"
       @input="updateInputNewTodo"
       @keydown.enter="addTodo"
       class="w-full px-4 bg-gray-900 rounded-full"
@@ -15,12 +15,12 @@ import {mapMutations ,mapState } from "vuex";
 
 export default {
   computed: {
-    ...mapState([
+    ...mapState('todolist',[
       'inputNewTodo',
     ]),
   },
   methods: {
-    ...mapMutations([
+    ...mapMutations('todolist',[
       'addTodo',
       'updateInputNewTodo',
     ]),    
