@@ -7,7 +7,6 @@ export const moduleTodolist = {
   }),
   mutations: {
     updateInputNewTodo (state, event) {
-      console.log([event, state]);
       state.inputNewTodo = event.target.value;
     },
     addTodo (state) {
@@ -15,7 +14,6 @@ export const moduleTodolist = {
         id : state.idIncrementor,
         text : state.inputNewTodo,
       }];
-      console.log(state);
       state.idIncrementor++;
       state.inputNewTodo = "";
     },
