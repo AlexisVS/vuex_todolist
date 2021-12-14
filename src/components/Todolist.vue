@@ -1,5 +1,5 @@
 <template>
-  <div class="max-h-96 flex flex-col space-y-2 items-center">
+  <div class="h-96 overflow-y-auto flex flex-col space-y-2 items-center">
     <Todo v-for="todo in todoList" :key="'todo' + todo.id" :todo="todo"/>
   </div>
 </template>

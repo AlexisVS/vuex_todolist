@@ -2,7 +2,7 @@
   <div
     class="min-h-screen w-full flex flex-col items-center bg-gray-900 text-gray-200 space-y-6"
   >
-    <h1 class="text-4xl uppercase mt-25%">Todo List</h1>
+    <h1 class="text-4xl uppercase mt-15%">Todo List</h1>
     <div class="w-80">
       <NewTodo />
       <Todolist />
